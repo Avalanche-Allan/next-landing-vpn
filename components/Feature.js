@@ -1,67 +1,79 @@
+import React from "react";
 import Image from "next/image";
-import React, { useMemo } from "react";
 import { motion } from "framer-motion";
-import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 
 const features = [
-  "Powerfull online protection.",
-  "Internet without borders.",
-  "Supercharged VPN",
-  "No specific time limits."
-]
+  {
+    title: "Instant Metadata Extraction",
+    description: "Connect once, extract everything—Flows, Apex Classes, and Triggers with a single click.",
+    icon: "/assets/Icon/instant.svg"
+  },
+  {
+    title: "AI-Powered Understanding",
+    description: "Turn complex code into clear documentation. Our AI explains what each automation does, its triggers, and affected objects.",
+    icon: "/assets/Icon/ai.svg"
+  },
+  {
+    title: "Notion Integration",
+    description: "Searchable, organized documentation that lives where your team already works.",
+    icon: "/assets/Icon/notion.svg"
+  }
+];
 
 const Feature = () => {
-  const scrollAnimation = useMemo(() => getScrollAnimation(), []);
+  const scrollAnimation = {
+    viewport: { once: true },
+    initial: { opacity: 0, y: 20 },
+    whileInView: { opacity: 1, y: 0 },
+    transition: { duration: 0.5 }
+  };
 
   return (
-    <div
-      className="max-w-screen-xl mt-8 mb-6 sm:mt-14 sm:mb-14 px-6 sm:px-8 lg:px-16 mx-auto"
-      id="feature"
-    >
-      <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-2 gap-8 p  y-8 my-12">
-        <ScrollAnimationWrapper className="flex w-full justify-end">
-          <motion.div className="h-full w-full p-4" variants={scrollAnimation}>
-            <Image
-              src="/assets/Illustration2.png"
-              alt="VPN Illustrasi"
-              layout="responsive"
-              quality={100}
-              height={414}
-              width={508}
-            />
-          </motion.div>
-        </ScrollAnimationWrapper>
-        <ScrollAnimationWrapper>
-
-        <motion.div className="flex flex-col items-end justify-center ml-auto w-full lg:w-9/12" variants={scrollAnimation}>
-          <h3 className="text-3xl lg:text-4xl font-medium leading-relaxed text-black-600">
-            We Provide Many Features You Can Use
-          </h3>
-          <p className="my-2 text-black-500">
-            You can explore the features that we provide with fun and have their
-            own functions each feature.
-          </p>
-          <ul className="text-black-500 self-start list-inside ml-8">
-            {features.map((feature, index) => (
-              <motion.li
-                className="relative circle-check custom-list"
-                custom={{duration: 2 + index}}
-                variants={scrollAnimation}
-                key={feature}
-                whileHover={{
-                scale : 1.1,
-                transition: {
-                  duration: .2
-                }
-                }}>
-                  {feature}
-              </motion.li>
-              )
-            )}
-          </ul>
-        </motion.div>
-        </ScrollAnimationWrapper>
+    <div className="bg-[#ECF0F1] w-full py-14" id="feature">
+      <div className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto">
+        <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-2 gap-8">
+          <ScrollAnimationWrapper className="flex flex-col justify-center">
+            <motion.h3
+              variants={scrollAnimation}
+              className="text-2xl lg:text-3xl font-medium leading-relaxed text-[#2C3E50] font-inter"
+            >
+              How It Works
+            </motion.h3>
+            <motion.p
+              variants={scrollAnimation}
+              className="my-4 text-[#2C3E50] font-sourceSansPro"
+            >
+              Get started in four simple steps:
+            </motion.p>
+            <motion.ul
+              variants={scrollAnimation}
+              className="text-[#2C3E50] self-start list-decimal pl-5 font-sourceSansPro"
+            >
+              <li className="mb-2">Connect your Salesforce org</li>
+              <li className="mb-2">Select metadata types to document</li>
+              <li className="mb-2">Choose your Notion workspace</li>
+              <li className="mb-2">Let AI do the heavy lifting</li>
+            </motion.ul>
+          </ScrollAnimationWrapper>
+          <ScrollAnimationWrapper className="flex flex-col justify-center">
+            <motion.div variants={scrollAnimation} className="grid grid-cols-1 gap-6">
+              {features.map((feature, index) => (
+                <div
+                  key={index}
+                  className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow"
+                >
+                  <h4 className="text-lg font-medium mb-2 text-[#2C3E50] font-inter">
+                    {feature.title}
+                  </h4>
+                  <p className="text-[#2C3E50] font-sourceSansPro">
+                    {feature.description}
+                  </p>
+                </div>
+              ))}
+            </motion.div>
+          </ScrollAnimationWrapper>
+        </div>
       </div>
     </div>
   );
