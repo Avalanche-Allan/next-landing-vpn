@@ -37,13 +37,13 @@ const Hero = ({
             variants={scrollAnimation}>
             <div className=" flex flex-col justify-center items-start row-start-2 sm:row-start-1">
               <h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-black-600 leading-normal">
-                Want anything to be easy with <strong>LaslesVPN</strong>.
+                Transform Salesforce Metadata into Living Documentation
               </h1>
               <p className="text-black-500 mt-4 mb-6">
-                Provide a network for all your needs with ease and fun using
-                LaslesVPN discover interesting features from us.
+                Automate documentation for your Flows and Apex code in Notion, powered by AI. From complex metadata to clear, searchable insights in under 2 hours.
               </p>
-              <ButtonPrimary>Get Started</ButtonPrimary>
+              <ButtonPrimary>Start Free Trial</ButtonPrimary>
+              <ButtonPrimary>Watch Demo (2 min)</ButtonPrimary>
             </div>
             <div className="flex w-full">
               <motion.div className="h-full w-full" variants={scrollAnimation}>
