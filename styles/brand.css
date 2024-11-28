@@ -8,7 +8,7 @@
 
   /* Accent Colors */
   --success-green: #27AE60;
-  --alert-red: #E74C3C;
+  --alert-blue: #2C3E50;  /* Changed from red to sherpa blue */
   --twilight-purple: #8E44AD;
 }
 
@@ -44,4 +44,17 @@ a {
 
 a:hover {
   color: var(--guide-orange);
+}
+
+/* Alert styles */
+.alert {
+  color: var(--alert-blue);
+  border-color: var(--alert-blue);
+}
+
+/* Price cards */
+.price-card {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
 }
