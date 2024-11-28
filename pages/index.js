@@ -8,7 +8,7 @@ import FAQ from "../components/FAQ";
 export default function Home() {
   return (
     <>
-      <SeoHead title='DocSherpa.ai Landing Page' />
+      <SeoHead title='DocSherpa.ai' />
       <Layout>
         <Hero />
         <Feature />

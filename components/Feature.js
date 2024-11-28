@@ -30,25 +30,25 @@ const Feature = () => {
   };
 
   return (
-    <div className="bg-[#ECF0F1] w-full py-14" id="feature">
+    <div className="bg-[var(--mountain-snow)] w-full py-14" id="feature">
       <div className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto">
         <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-2 gap-8">
           <ScrollAnimationWrapper className="flex flex-col justify-center">
             <motion.h3
               variants={scrollAnimation}
-              className="text-2xl lg:text-3xl font-medium leading-relaxed text-[#2C3E50] font-inter"
+              className="text-2xl lg:text-3xl font-medium leading-relaxed text-[var(--sherpa-blue)] font-inter"
             >
               How It Works
             </motion.h3>
             <motion.p
               variants={scrollAnimation}
-              className="my-4 text-[#2C3E50] font-sourceSansPro"
+              className="my-4 text-[var(--sherpa-blue)] font-sourceSansPro"
             >
               Get started in four simple steps:
             </motion.p>
             <motion.ul
               variants={scrollAnimation}
-              className="text-[#2C3E50] self-start list-decimal pl-5 font-sourceSansPro"
+              className="text-[var(--sherpa-blue)] self-start list-decimal pl-5 font-sourceSansPro"
             >
               <li className="mb-2">Connect your Salesforce org</li>
               <li className="mb-2">Select metadata types to document</li>
@@ -63,10 +63,10 @@ const Feature = () => {
                   key={index}
                   className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow"
                 >
-                  <h4 className="text-lg font-medium mb-2 text-[#2C3E50] font-inter">
+                  <h4 className="text-lg font-medium mb-2 text-[var(--sherpa-blue)] font-inter">
                     {feature.title}
                   </h4>
-                  <p className="text-[#2C3E50] font-sourceSansPro">
+                  <p className="text-[var(--sherpa-blue)] font-sourceSansPro">
                     {feature.description}
                   </p>
                 </div>
