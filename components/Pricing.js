@@ -45,50 +45,6 @@ const Pricing = () => {
                   }
                 }}
               >
-                <div className="p-4 lg:p-0 mt-6 lg:mt-16">
-                  <Image
-                    src="/assets/Free.png"
-                    width={145}
-                    height={165}
-                    alt="Free Plan"
-                  />
-                </div>
-                <p className="text-lg text-black-600 font-medium capitalize my-2 sm:my-7">
-                  Free Plan
-                </p>
-                <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow">
-                  <li className="relative check custom-list my-2">
-                    Unlimited Bandwitch
-                  </li>
-                  <li className="relative check custom-list my-2">
-                    Encrypted Connection
-                  </li>
-                  <li className="relative check custom-list my-2">
-                    No Traffic Logs
-                  </li>
-                  <li className="relative check custom-list my-2">
-                    Works on All Devices
-                  </li>
-                </ul>
-                <div className="flex flex-col w-full justify-center mb-8 flex-none mt-12">
-                  <p className="text-2xl text-black-600 text-center mb-4 ">
-                    Free
-                  </p>
-                  <ButtonOutline>Select</ButtonOutline>
-                </div>
-              </motion.div>
-            </ScrollAnimationWrapper>
-            <ScrollAnimationWrapper className="flex justify-center">
-              <motion.div
-                variants={scrollAnimation}
-                className="flex flex-col justify-center items-center border-2 border-gray-500 rounded-xl py-4 px-6 lg:px-12 xl:px-20"
-                whileHover={{
-                  scale : 1.1,
-                  transition: {
-                    duration: .2
-                  }
-                }}
-              >
               <div className="p-4 lg:p-0 mt-6 lg:mt-16">
                 <Image
                   src="/assets/Standard.png"
@@ -99,7 +55,7 @@ const Pricing = () => {
               </div>
               <h3 className="text-2xl font-medium text-black-600">One-Time Documentation</h3>
               <p className="text-black-500 mt-4 mb-6">
-                $349.99
+                $349.99/year
               </p>
               <ul>
                 <li>Full metadata extraction</li>

@@ -3,6 +3,8 @@ import LogoVPN from "../../public/assets/Logo.svg";
 import Facebook from "../../public/assets/Icon/facebook.svg";
 import Twitter from "../../public/assets/Icon/twitter.svg";
 import Instagram from "../../public/assets/Icon/instagram.svg";
+import ButtonPrimary from '../ButtonPrimary';
+
 const Footer = () => {
   return (
     <div className="bg-white-300 pt-44 pb-24">
@@ -24,64 +26,20 @@ const Footer = () => {
               <Instagram className="h-6 w-6" />
             </div>
           </div>
-          <p className="text-gray-400">©{new Date().getFullYear()} - DocSherpa.ai</p>
+          <p className="text-gray-400"> 2023 - DocSherpa.ai</p>
         </div>
-        <div className=" row-span-2 sm:col-span-2 sm:col-start-7 sm:col-end-9 flex flex-col">
-          <p className="text-black-600 mb-4 font-medium text-lg">Product</p>
-          <ul className="text-black-500 ">
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              Download{" "}
-            </li>
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              Pricing{" "}
-            </li>
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              Locations{" "}
-            </li>
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              Server{" "}
-            </li>
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              Countries{" "}
-            </li>
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              Blog{" "}
-            </li>
-          </ul>
+        <div className="row-span-2 sm:col-span-2 sm:col-start-7 sm:col-end-9 flex flex-col">
+          <p className="text-black-600 mb-4 font-medium text-lg">Features</p>
+          <p className="text-black-600 mb-4 font-medium text-lg">Pricing</p>
+          <p className="text-black-600 mb-4 font-medium text-lg">FAQs</p>
+          <p className="text-black-600 mb-4 font-medium text-lg">Terms</p>
+          <p className="text-black-600 mb-4 font-medium text-lg">Privacy</p>
+          <p className="text-black-600 mb-4 font-medium text-lg">Contact</p>
         </div>
         <div className="row-span-2 sm:col-span-2 sm:col-start-9 sm:col-end-11 flex flex-col">
-          <p className="text-black-600 mb-4 font-medium text-lg">Engage</p>
-          <ul className="text-black-500">
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              LaslesVPN ?{" "}
-            </li>
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              FAQ{" "}
-            </li>
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              Tutorials{" "}
-            </li>
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              About Us{" "}
-            </li>
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              Privacy Policy{" "}
-            </li>
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              Terms of Service{" "}
-            </li>
-          </ul>
-        </div>
-        <div className="row-span-2 sm:col-span-2 sm:col-start-11 sm:col-end-13 flex flex-col">
-          <p className="text-black-600 mb-4 font-medium text-lg">Earn Money</p>
-          <ul className="text-black-500">
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              Affiliate{" "}
-            </li>
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              Become Partner{" "}
-            </li>
-          </ul>
+          <p className="text-black-600 mb-4 font-medium text-lg">Transform your Salesforce documentation today.</p>
+          <ButtonPrimary>Start Free Trial</ButtonPrimary>
+          <ButtonPrimary>Schedule Demo</ButtonPrimary>
         </div>
       </div>
     </div>

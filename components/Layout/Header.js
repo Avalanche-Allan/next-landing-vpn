@@ -23,7 +23,7 @@ const Header = () => {
       >
         <nav className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto grid grid-flow-col py-3 sm:py-4">
           <div className="col-start-1 col-end-2 flex items-center">
-            <LogoVPN className="h-8 w-auto" />
+            <LogoVPN className="h-8 w-auto mb-6" alt="Doc Sherpa" />
           </div>
           <ul className="hidden lg:flex col-start-4 col-end-8 text-black-500  items-center">
             <LinkScroll
@@ -205,7 +205,7 @@ const Header = () => {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth={2}
-                    d="M11 16l-4-4m0 0l4-4m-4 4h12a8 8 0 018 8v0a8 8 0 01-8 8H3a8 8 0 01-8-8V6a8 8 0 012-8h6a8 8 0 012 8v2a8 8 0 01-8 8h-6a8 8 0 01-8-8V6a8 8 0 012-8h6a8 8 0 012 8v2a8 8 0 01-8 8h-6a8 8 0 01-8-8V6a8 8 0 012-8h6a8 8 0 012 8v2a8 8 0 01-8 8h-6a8 8 0 01-8-8V6z"
+                    d="M11 16l-4-4m0 0l4-4m-4 4h12a8 8 0 018 8v0a8 8 0 01-8 8H3a8 8 0 01-8-8V6a8 8 0 012-8h6a8 8 0 012 8v2a8 8 0 01-8 8h-6a8 8 0 01-8-8V6a8 8 0 012-8h6a8 8 0 012 8v2a8 8 0 01-8 8h-6a8 8 0 01-8-8V6z"
                   />
                 </svg>
                 Login
