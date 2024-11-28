@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Sans+Pro:wght@400;600&family=JetBrains+Mono&display=swap');
+
+:root {
+  /* Primary Colors */
+  --sherpa-blue: #2C3E50;
+  --mountain-snow: #ECF0F1;
+  --guide-orange: #E67E22;
+
+  /* Accent Colors */
+  --success-green: #27AE60;
+  --alert-red: #E74C3C;
+  --twilight-purple: #8E44AD;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+code {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* UI Elements */
+.btn-primary {
+  background-color: var(--guide-orange);
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #D35400;
+}
+
+/* Links */
+a {
+  color: var(--sherpa-blue);
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--guide-orange);
+}
