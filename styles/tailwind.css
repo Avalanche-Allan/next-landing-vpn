@@ -5,6 +5,14 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    font-family: "Rubik", sans-serif;
+  }
+  
+  body {
+    @apply bg-white-500;
+  }
+  
   :root {
     /* Primary Colors */
     --sherpa-blue: #2C3E50;
@@ -20,53 +28,50 @@
 
 @layer components {
   .btn-primary {
-    @apply py-3 lg:py-4 px-12 lg:px-16 text-white font-semibold rounded-lg bg-[var(--guide-orange)] hover:shadow-lg transition-all outline-none;
+    @apply py-3 lg:py-4 px-12 lg:px-16 text-white font-semibold rounded-lg;
+    background-color: var(--guide-orange);
+    transition: all 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    @apply shadow-lg;
+    background-color: #D35400;
   }
 }
 
-html {
-  font-family: "Rubik", sans-serif;
-}
-body {
-  @apply bg-white-500;
-}
-p {
-  @apply text-black-500;
-}
 .animation-hover:after {
   background: none repeat scroll 0 0 transparent;
   content: "";
   height: 2px;
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
   position: absolute;
   background: var(--guide-orange);
   left: 50%;
   bottom: 0;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
 }
+
 .animation-active:after {
   width: 100%;
   left: 0;
 }
+
 .animation-hover:hover:after {
   width: 100%;
   left: 0;
 }
 
 li.custom-list:before {
-  content: "\2022"; /* bullet point, for screen readers */
-  text-indent: -9999999px; /* move the bullet point out of sight */
-
+  content: "\2022";
+  text-indent: -9999999px;
   width: 0.4em;
-  height: 1em;
-  background-repeat: no-repeat;
-
-  background-size: 0.4em 0.7em;
-  background-position: 0 0.3em;
-  font-size: 300%;
-  top: -0.35em;
-  @apply absolute block;
+  height: 0.4em;
+  background-color: var(--guide-orange);
+  border-radius: 50%;
+  margin-right: 0.5em;
+  display: inline-block;
 }
+
 li.circle-check:before {
   background-image: url("/assets/Icon/checklist.svg");
   left: -0.7em;
