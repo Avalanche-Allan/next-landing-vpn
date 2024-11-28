@@ -4,10 +4,9 @@ import { useRouter } from "next/router";
 
 // Default value for some meta data
 const defaultMeta = {
-  title: 'LaslesVPN',
-  siteName: 'LaslesVPN',
-  description:
-    'Landing page VPN LaslesVPN Best VPN For Privacy, Country and Cheapest',
+  title: 'DocSherpa.ai',
+  siteName: 'DocSherpa.ai',
+  description: 'Automate Salesforce metadata documentation with DocSherpa.ai.',
   // change base url of your web (without '/' at the end)
   url: 'https://next-landing-vpn.vercel.app',
   type: 'website',

@@ -97,30 +97,17 @@ const Pricing = () => {
                   alt="Standard Plan"
                 />
               </div>
-              <p className="text-lg text-black-600 font-medium capitalize my-2 sm:my-7">
-                Standard Plan{" "}
+              <h3 className="text-2xl font-medium text-black-600">One-Time Documentation</h3>
+              <p className="text-black-500 mt-4 mb-6">
+                $349.99
               </p>
-              <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow">
-                <li className="relative check custom-list my-2">
-                  Unlimited Bandwitch
-                </li>
-                <li className="relative check custom-list my-2">
-                  Encrypted Connection
-                </li>
-                <li className="relative check custom-list my-2">
-                  No Traffic Logs
-                </li>
-                <li className="relative check custom-list my-2">
-                  Works on All Devices
-                </li>
-                <li className="relative check custom-list my-2">
-                  Connect Anyware{" "}
-                </li>
+              <ul>
+                <li>Full metadata extraction</li>
+                <li>AI-powered documentation</li>
+                <li>Notion workspace integration</li>
+                <li>One-time setup</li>
               </ul>
               <div className="flex flex-col w-full justify-center mb-8 flex-none mt-12">
-                <p className="text-2xl text-black-600 text-center mb-4 ">
-                  $9 <span className="text-black-500">/ mo</span>
-                </p>
                 <ButtonOutline>Select</ButtonOutline>
               </div>
               </motion.div>
@@ -144,34 +131,18 @@ const Pricing = () => {
                   alt="Premium Plan"
                 />
               </div>
-              <p className="text-lg text-black-600 font-medium capitalize my-2 sm:my-7">
-                Premium Plan{" "}
+              <h3 className="text-2xl font-medium text-black-600">Daily Sync (Most Popular)</h3>
+              <p className="text-black-500 mt-4 mb-6">
+                $699.99/year
               </p>
-              <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow">
-                <li className="relative check custom-list my-2">
-                  Unlimited Bandwitch
-                </li>
-                <li className="relative check custom-list my-2">
-                  Encrypted Connection
-                </li>
-                <li className="relative check custom-list my-2">
-                  No Traffic Logs
-                </li>
-                <li className="relative check custom-list my-2">
-                  Works on All Devices
-                </li>
-                <li className="relative check custom-list my-2">
-                  Connect Anyware{" "}
-                </li>
-                <li className="relative check custom-list my-2">
-                  Get New Features{" "}
-                </li>
+              <ul>
+                <li>Everything in One-Time</li>
+                <li>Daily metadata checks</li>
+                <li>Automatic updates</li>
+                <li>Change tracking</li>
+                <li>Priority support</li>
               </ul>
               <div className="flex flex-col w-full justify-center mb-8 flex-none mt-12">
-                <p className="text-2xl text-black-600 text-center mb-4 ">
-                  $12 <span className="text-black-500">/ mo</span>
-                </p>
-
                 <ButtonOutline>Select</ButtonOutline>
               </div>
               </motion.div>
