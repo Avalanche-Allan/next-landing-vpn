@@ -21,11 +21,11 @@ const Pricing = () => {
             Choose Your Plan
           </motion.h3>
         </ScrollAnimationWrapper>
-        <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-12 py-8 lg:py-12 px-6 sm:px-0 lg:px-6 items-center justify-center max-w-4xl mx-auto">
+        <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-12 py-8 lg:py-12 px-6 sm:px-0 lg:px-6 items-stretch justify-center max-w-4xl mx-auto">
           <ScrollAnimationWrapper className="flex justify-center w-full">
             <motion.div
               variants={scrollAnimation}
-              className="flex flex-col justify-center items-center bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow w-full max-w-md"
+              className="flex flex-col justify-between items-center bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow w-full max-w-md h-full"
               whileHover={{ scale: 1.01 }}
             >
               <h3 className="text-2xl font-medium text-[var(--sherpa-blue)] mb-4 font-inter">One-Time Documentation</h3>
@@ -61,7 +61,7 @@ const Pricing = () => {
           <ScrollAnimationWrapper className="flex justify-center w-full">
             <motion.div
               variants={scrollAnimation}
-              className="flex flex-col justify-center items-center bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow relative w-full max-w-md"
+              className="flex flex-col justify-between items-center bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow relative w-full max-w-md h-full"
               whileHover={{ scale: 1.01 }}
             >
               <div className="absolute -top-4 bg-[var(--sherpa-blue)] text-white px-4 py-1 rounded-full text-sm font-medium">

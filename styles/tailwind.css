@@ -2,6 +2,27 @@
 
 @tailwind base;
 @tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Primary Colors */
+    --sherpa-blue: #2C3E50;
+    --mountain-snow: #ECF0F1;
+    --guide-orange: #E67E22;
+
+    /* Accent Colors */
+    --success-green: #27AE60;
+    --alert-blue: #2C3E50;
+    --twilight-purple: #8E44AD;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply py-3 lg:py-4 px-12 lg:px-16 text-white font-semibold rounded-lg bg-[var(--guide-orange)] hover:shadow-lg transition-all outline-none;
+  }
+}
 
 html {
   font-family: "Rubik", sans-serif;
@@ -17,13 +38,19 @@ p {
   content: "";
   height: 2px;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  @apply w-0 bg-orange-500 left-1/2 block bottom-0 absolute;
+  width: 0;
+  position: absolute;
+  background: var(--guide-orange);
+  left: 50%;
+  bottom: 0;
 }
 .animation-active:after {
-  @apply left-0 w-full;
+  width: 100%;
+  left: 0;
 }
 .animation-hover:hover:after {
-  @apply left-0 w-full;
+  width: 100%;
+  left: 0;
 }
 
 li.custom-list:before {
@@ -63,6 +90,5 @@ li.check:before {
 }
 
 /* purgecss end ignore */
-@tailwind utilities;
 /* purgecss start ignore */
 /* purgecss end ignore */
