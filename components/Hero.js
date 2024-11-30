@@ -25,7 +25,7 @@ const Hero = () => {
                 Automate documentation for your Flows and Apex code in Notion, powered by AI. From complex metadata to clear, searchable insights in under 2 hours.
               </p>
               <div className="flex">
-                <ButtonPrimary>Watch Demo (2 min)</ButtonPrimary>
+                <ButtonPrimary addClass="btn-primary">Watch Demo (2 min)</ButtonPrimary>
               </div>
             </div>
             <div className="flex w-full">
